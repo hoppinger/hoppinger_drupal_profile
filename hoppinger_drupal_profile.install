@@ -35,6 +35,7 @@ function hoppinger_drupal_profile_install() {
 
   // Allow authenticated users to use shortcuts.
   user_role_grant_permissions(RoleInterface::AUTHENTICATED_ID, ['access shortcuts']);
+  user_role_revoke_permissions(RoleInterface::ANONYMOUS_ID, ['access content']);
 
   // Populate the default shortcut set.
   $shortcut = Shortcut::create([
