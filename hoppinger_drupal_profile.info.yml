@@ -25,5 +25,11 @@ dependencies:
   - file
   - views
   - views_ui
+  - admin_toolbar
+  - simple_system_page_access
+  - devel
+  - kint
+  - menu_admin_per_menu
+  - pathauto
 themes:
   - seven
