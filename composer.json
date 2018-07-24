@@ -27,6 +27,6 @@
         "drupal/services_api_key_auth": "~1.0",
         "drupal/simple_sitemap": "~2.12",
         "drupal/video_embed_field": "~2.0",
-        "hoppinger/simple_system_page_access": "dev-master",
+        "hoppinger/simple_system_page_access": "dev-master"
     }
 }
