@@ -1,0 +1,17 @@
+{
+    "name": "hoppinger/hoppinger_drupal_profile",
+    "description": "Drupal profile by Hoppinger",
+    "type": "drupal-profile",
+    "license": "GPL-2.0-or-later",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "repositories": {
+        "drupal": {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        }
+    },
+    "require": {
+        "drupal/paragraphs": "~1.3"
+    }
+}
