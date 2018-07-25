@@ -35,5 +35,6 @@ dependencies:
   - video_embed_field
   - video_embed_media
   - image_widget_crop
+  - paragraphs
 themes:
   - seven
