@@ -2,15 +2,14 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.media.image.field_media_image
-    - image.style.thumbnail
-    - media.type.image
+    - field.field.media.video.field_media_video_embed_field
+    - media.type.video
   module:
-    - image_widget_crop
     - path
-id: media.image.default
+    - video_embed_field
+id: media.video.default
 targetEntityType: media
-bundle: image
+bundle: video
 mode: default
 content:
   created:
@@ -19,19 +18,11 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_media_image:
+  field_media_video_embed_field:
     weight: 0
-    settings:
-      crop_preview_image_style: crop_thumbnail
-      crop_list: {  }
-      crop_types_required: {  }
-      show_crop_area: false
-      show_default_crop: true
-      warn_multiple_usages: true
-      progress_indicator: throbber
-      preview_image_style: thumbnail
+    settings: {  }
     third_party_settings: {  }
-    type: image_widget_crop
+    type: video_embed_field_textfield
     region: content
   name:
     type: string_textfield

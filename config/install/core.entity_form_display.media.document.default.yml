@@ -2,15 +2,14 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.media.image.field_media_image
-    - image.style.thumbnail
-    - media.type.image
+    - field.field.media.document.field_media_file
+    - media.type.document
   module:
-    - image_widget_crop
+    - file
     - path
-id: media.image.default
+id: media.document.default
 targetEntityType: media
-bundle: image
+bundle: document
 mode: default
 content:
   created:
@@ -19,19 +18,12 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_media_image:
+  field_media_file:
     weight: 0
     settings:
-      crop_preview_image_style: crop_thumbnail
-      crop_list: {  }
-      crop_types_required: {  }
-      show_crop_area: false
-      show_default_crop: true
-      warn_multiple_usages: true
       progress_indicator: throbber
-      preview_image_style: thumbnail
     third_party_settings: {  }
-    type: image_widget_crop
+    type: file_generic
     region: content
   name:
     type: string_textfield
