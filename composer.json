@@ -12,6 +12,7 @@
         }
     },
     "require": {
+        "cweagans/composer-patches": "^1.6.4",
         "drupal/admin_toolbar": "~1.24",
         "drupal/ctools": "~3.0",
         "drupal/devel": "1.x-dev",
@@ -28,5 +29,16 @@
         "drupal/simple_sitemap": "~2.12",
         "drupal/video_embed_field": "~2.0",
         "hoppinger/simple_system_page_access": "dev-master"
+    },
+    "extra": {
+        "patches": {
+            "drupal/metatag": {
+                "Permissions": "https://www.drupal.org/files/issues/metatag-n2782797-16.patch",
+                "Translations": "https://www.drupal.org/files/issues/2018-06-07/2978106-2.patch"
+            },
+            "drupal/menu_admin_per_menu": {
+                "Token bug": "https://www.drupal.org/files/issues/token_bug_fix-2932379-2.patch"
+            }
+        }
     }
 }
