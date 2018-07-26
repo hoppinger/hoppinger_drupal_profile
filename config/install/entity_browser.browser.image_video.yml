@@ -22,7 +22,7 @@ widgets:
   aed1b183-dcdb-468f-a885-4df84a3c7d51:
     settings:
       entity_type: media
-      bundle: video
+      bundle: image
       form_mode: browser
       submit_text: Save
     uuid: aed1b183-dcdb-468f-a885-4df84a3c7d51
