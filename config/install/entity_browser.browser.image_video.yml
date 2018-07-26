@@ -1,0 +1,51 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.media_browser
+  module:
+    - entity_browser_entity_form
+    - views
+name: image_video
+label: 'Image & video'
+display: modal
+display_configuration:
+  width: '650'
+  height: '500'
+  link_text: 'Select media'
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  aed1b183-dcdb-468f-a885-4df84a3c7d51:
+    settings:
+      entity_type: media
+      bundle: video
+      form_mode: browser
+      submit_text: Save
+    uuid: aed1b183-dcdb-468f-a885-4df84a3c7d51
+    weight: -9
+    label: 'Add image'
+    id: entity_form
+  af60d85a-23b2-4e57-b7d6-f1486957b8e8:
+    settings:
+      view: media_browser
+      view_display: image_video
+      submit_text: Select
+      auto_select: false
+    uuid: af60d85a-23b2-4e57-b7d6-f1486957b8e8
+    weight: -10
+    label: 'Choose image or video'
+    id: view
+  4852bd07-f13f-47e7-b984-c351878635a8:
+    settings:
+      entity_type: media
+      bundle: video
+      form_mode: browser
+      submit_text: Save
+    uuid: 4852bd07-f13f-47e7-b984-c351878635a8
+    weight: -8
+    label: 'Add video'
+    id: entity_form

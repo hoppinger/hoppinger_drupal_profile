@@ -8,9 +8,13 @@ is_admin: false
 permissions:
   - 'access administration pages'
   - 'access content overview'
+  - 'access document entity browser pages'
+  - 'access image entity browser pages'
+  - 'access image_video entity browser pages'
   - 'access media overview'
   - 'access taxonomy overview'
   - 'access toolbar'
+  - 'access video entity browser pages'
   - 'administer main menu items'
   - 'create document media'
   - 'create image media'

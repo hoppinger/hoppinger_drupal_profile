@@ -36,5 +36,9 @@ dependencies:
   - video_embed_media
   - image_widget_crop
   - paragraphs
+  - entity_browser
+  - entity_browser_entity_form
+  - ctools
+  - inline_entity_form
 themes:
   - seven

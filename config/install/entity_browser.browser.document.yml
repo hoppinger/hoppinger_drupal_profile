@@ -1,0 +1,41 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.media_browser
+  module:
+    - entity_browser_entity_form
+    - views
+name: document
+label: Document
+display: modal
+display_configuration:
+  width: '650'
+  height: '500'
+  link_text: 'Select media'
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  fae6fe4f-2531-4fb9-88aa-8965b4719e1c:
+    settings:
+      entity_type: media
+      bundle: document
+      form_mode: browser
+      submit_text: Save
+    uuid: fae6fe4f-2531-4fb9-88aa-8965b4719e1c
+    weight: -9
+    label: 'Add document'
+    id: entity_form
+  e1942694-1b47-448f-bfdb-f94f55573342:
+    settings:
+      view: media_browser
+      view_display: document
+      submit_text: Select
+      auto_select: false
+    uuid: e1942694-1b47-448f-bfdb-f94f55573342
+    weight: -10
+    label: 'Choose document'
+    id: view

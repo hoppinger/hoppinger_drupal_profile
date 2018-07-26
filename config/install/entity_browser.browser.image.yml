@@ -1,0 +1,41 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.media_browser
+  module:
+    - entity_browser_entity_form
+    - views
+name: image
+label: Image
+display: modal
+display_configuration:
+  width: '650'
+  height: '500'
+  link_text: 'Select media'
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  363bc82c-77c0-4d2d-937c-7814355cdbb8:
+    settings:
+      entity_type: media
+      bundle: document
+      form_mode: default
+      submit_text: Save
+    uuid: 363bc82c-77c0-4d2d-937c-7814355cdbb8
+    weight: -9
+    label: 'Add image'
+    id: entity_form
+  7b4c7691-d654-4b5c-9924-91b18fe4e4ac:
+    settings:
+      view: media_browser
+      view_display: image
+      submit_text: Select
+      auto_select: false
+    uuid: 7b4c7691-d654-4b5c-9924-91b18fe4e4ac
+    weight: -10
+    label: 'Choose image'
+    id: view
